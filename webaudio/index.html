@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Shred Browse</title>
+	<meta name="og:title" content="Shred Browser"/>
+	<link rel="stylesheet" type="text/css" href="./styles/shredBrowse.css"/>
+</head>
+
+<body>
+
+	<header class="section section--page-intro demo__header">
+		<div class="container">
+			<div class="section__header">
+				<h1>Shred Browse!!!</h1>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="section section--banner section--banner--light section--tuner">
+		<div class="container">
+			<div class="section__body tuner__body">
+				<div class="layout layout--basic">
+				<div class="module module--secondary">
+					<div class="tuner__gauge-wrap">
+						<div class="tuner__values clear">
+	                        <div class="tuner__value">
+	                        	<h5>Pitch</h5>
+								<span class="subtitle" id="pitch">-- Hz</span>
+	                        </div>
+	                        <div class="tuner__value">
+	                        	<h5>Note</h5>
+								<span class="subtitle" id="note">--</span>
+	                        </div>
+	                    </div>
+	                    <canvas class="tuner__gauge" id="gaugeCanvas"></canvas>
+					</div>
+				</div>
+				<div class="module module--primary">
+					<p class="alert--error tuner__alert" id="errorMessage"></p>
+					<div class="tuner__controls">
+						<h3 class="subtitle">Shred using:</h3>
+	                    <button class="button tuner__input-button" id="micButton">Microphone</button>
+	                    <button class="button tuner__input-button" id="refButton">lineIn</button>
+	                    </div>
+					</div>
+					<form class="shred__form" method="post">
+						<div> 
+							Shred your thoughts here...
+						<textarea id="shred" rows="6" cols="60"></textarea>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+    
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="scripts/shredBrowse.js"></script>
+<script type="text/javascript" src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+<script type="text/javascript"
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</body>
+</html>
